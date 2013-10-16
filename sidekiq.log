@@ -1,0 +1,36 @@
+# Logfile created on 2013-10-16 12:46:29 +0900 by logger.rb/36483
+2013-10-16T03:46:30Z 13173 TID-4i1zc INFO: [Sidetiq] Sidetiq v0.4.3 - Copyright (c) 2012-2013, Tobias Svensson <tob@tobiassvensson.co.uk>
+2013-10-16T03:46:30Z 13173 TID-4i1zc INFO: [Sidetiq] Sidetiq is covered by the 3-clause BSD license.
+2013-10-16T03:46:30Z 13173 TID-4i1zc INFO: [Sidetiq] See LICENSE and http://opensource.org/licenses/BSD-3-Clause for licensing details.
+2013-10-16T03:46:30Z 13173 TID-4i1zc INFO: [Sidetiq] Sidetiq::Supervisor start
+2013-10-16T03:46:30Z 13173 TID-jwfuo INFO: [Sidetiq] Sidetiq::Actor::Clock id: 33427400 initialize
+2013-10-16T03:46:30Z 13173 TID-51ol4 INFO: [Sidetiq] Sidetiq::Actor::Handler id: 7489720 initialize
+2013-10-16T03:46:30Z 13173 TID-5fmt4 INFO: [Sidetiq] Sidetiq::Actor::Handler id: 8994240 initialize
+2013-10-16T03:46:30Z 13173 TID-jwfuo WARN: [Sidetiq] Can't link Sidetiq::Actor::Clock. Sidekiq::Manager not running. Retrying in 5 seconds ...
+2013-10-16T03:46:30Z 13173 TID-51ol4 WARN: [Sidetiq] Can't link Sidetiq::Actor::Handler. Sidekiq::Manager not running. Retrying in 5 seconds ...
+2013-10-16T03:46:30Z 13173 TID-5fmt4 WARN: [Sidetiq] Can't link Sidetiq::Actor::Handler. Sidekiq::Manager not running. Retrying in 5 seconds ...
+2013-10-16T03:46:31Z 13173 TID-4i1zc INFO: Booting Sidekiq 2.15.1 using redis://yamapp-redis.gneihq.0001.apne1.cache.amazonaws.com:6379 with options {:namespace=>"Winboardmessages:development:sidekiq"}
+2013-10-16T03:46:31Z 13173 TID-4i1zc INFO: Running in ruby 2.0.0p247 (2013-06-27 revision 41674) [x86_64-linux]
+2013-10-16T03:46:31Z 13173 TID-4i1zc INFO: See LICENSE and the LGPL-3.0 for licensing details.
+2013-10-16T03:46:42Z 13173 TID-fdauc WARN: Sidekiq died due to the following error, cannot recover, process exiting
+2013-10-16T03:46:42Z 13173 TID-fdauc WARN: linking timeout of 5 seconds exceeded
+2013-10-16T03:46:42Z 13173 TID-fdauc WARN: /usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/actor.rb:217:in `block (2 levels) in linking_request'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/actor.rb:203:in `loop'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/actor.rb:203:in `block in linking_request'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/tasks.rb:109:in `exclusive'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid.rb:431:in `exclusive'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/actor.rb:198:in `linking_request'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/actor.rb:90:in `monitor'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/actor.rb:101:in `link'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid.rb:383:in `link'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/calls.rb:25:in `public_send'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/calls.rb:25:in `dispatch'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/calls.rb:67:in `dispatch'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/actor.rb:322:in `block in handle_message'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/actor.rb:416:in `block in task'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/tasks.rb:55:in `block in initialize'
+/usr/local/rvm/gems/ruby-2.0.0-p247/gems/celluloid-0.15.2/lib/celluloid/tasks/task_fiber.rb:13:in `block in create'
+2013-10-16T03:46:42Z 13173 TID-51ol4 INFO: [Sidetiq] Enqueue: SpoSyncWorker (at: 1381895280.0) (last: 1381893300.0)
+2013-10-16T03:46:42Z 13173 TID-jwfuo INFO: [Sidetiq] Sidetiq::Actor::Clock id: 33427400 shutting down ...
+2013-10-16T03:46:42Z 13173 TID-5fmt4 INFO: [Sidetiq] Sidetiq::Actor::Handler id: 8994240 shutting down ...
+2013-10-16T03:46:43Z 13173 TID-51ol4 INFO: [Sidetiq] Sidetiq::Actor::Handler id: 7489720 shutting down ...

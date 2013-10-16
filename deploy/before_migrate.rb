@@ -4,6 +4,6 @@ current_release = release_path
 
 execute "sidekiq" do
   cwd current_release
-  command "bundle exec sidekiq"
+  command "bundle exec sidekiq --daemon --logfile log/sidekiq.log"
   environment "RAILS_ENV" => env
 end
