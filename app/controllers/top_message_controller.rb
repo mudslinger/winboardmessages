@@ -2,6 +2,7 @@
 class TopMessageController < ApplicationController
 
   layout "blank"
+  around_filter :iframe_ref_auth, :only => :message
 
   def message
     @type = params[:type] if present?
@@ -15,9 +16,25 @@ class TopMessageController < ApplicationController
     @next_entry = @key == 0 ? list[1] : list[2]
   end
 
-  def x
-    SpoSyncWorker.new.perform()
-  end
+  private
+    def iframe_ref_auth
+      response.headers["X-Frame-Options"] = 'Allow-From http://ec9.winboard.jp/ https://ec9.winboard.jp/'
+
+      referer = request.referer
+      referer = '' unless referer.present?
+
+      #リファラー無しの場合はforbidden
+      # if (
+      #     referer.include?('ec9.winboard') ||
+      #     referer.include?('192.168') ||
+      #     referer.include?('yamaokaya')
+      #   ) then
+      #   yield
+      # else
+      #   render :status => :forbidden, :text => "Forbidden"
+      # end
+
+    end
 end
 
 module Message
