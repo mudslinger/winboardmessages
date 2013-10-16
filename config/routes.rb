@@ -15,7 +15,7 @@ Winboardmessages::Application.routes.draw do
   #   resources :products
 
   get ':type/:key(.:format)' => 'top_message#message'
-  get 'x' => 'top_message#x'
+
 
   # Example resource route with options:
   #   resources :products do
