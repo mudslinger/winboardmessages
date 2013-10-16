@@ -9,10 +9,11 @@
       .lf
         %h2
           = image_tag @entry.icon
-          %a{href:@entry.src_uri,target:"sharepoint"}
-            = truncate(@entry.title,:length => 24)
-            = image_tag 'new.gif' if @entry.new?
+          = truncate(@entry.title,:length => 24)
+          = image_tag 'new.gif' if @entry.new?
       .rf
+        %a{href:@entry.src_uri,target:"sharepoint"}
+          [別ウィンドウで見る]
     .tb#contentsArea
       %br
       %br
