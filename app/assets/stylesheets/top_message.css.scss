@@ -1,0 +1,83 @@
+// Place all the styles related to the TopMessage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  width:100%;
+  padding:0px;
+  margin:0px;
+}
+* html body{
+    overflow: hidden;
+}
+div#headerArea{
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  border-top: 1px solid #F7F7F7;
+  border-right: 1px solid #B6B6B6;
+  border-bottom: 1px solid #B6B6B6;
+  border-left: 1px solid #F7F7F7;
+  background-image: url(http://ec9.winboard.jp/yamaokaya/img/listMenu.gif);
+  background-repeat:repeat-x;
+  background-color:rgb(209, 209, 209);
+  color:#111;
+  font-size:12px;
+  margin:0px;
+  padding:2px;
+}
+div#headerArea h2{
+  font-size:12px;
+  padding:0px;
+  margin:0px;
+}
+div#headerArea div.lf{
+  width:80%;
+}
+div#headerArea div.rf{
+  width:15%;
+}
+div#footerArea {
+  position: fixed !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  border-top: 1px solid #F7F7F7;
+  border-right: 1px solid #B6B6B6;
+  border-bottom: 1px solid #B6B6B6;
+  border-left: 1px solid #F7F7F7;
+  background-image: url(http://ec9.winboard.jp/yamaokaya/img/listMenu.gif);
+  background-repeat:repeat-x;
+  background-color:rgb(209, 209, 209);
+  color:#111;
+}
+div#footerArea a{
+  color:#111;
+}
+div.tb{
+  width:100%;
+  border:none;
+  font-size:13px;
+  padding:0px;
+  claer:both;
+}
+div.lf,div.rf{
+  padding:2px;
+  overflow:hidden;
+}
+div.lf{
+  float:left;
+  text-align: left;
+}
+div.rf{
+  float:right;
+  text-align: right;
+}
+* html div#contentsArea{
+  height: 100%;
+  overflow: auto;
+}

@@ -1,0 +1,2 @@
+module TopMessageHelper
+end

@@ -1,0 +1,15 @@
+defaults: &defaults
+  adapter: mysql2
+  encoding: utf8
+  host: yamaokaya-db.c5uthvjn4chs.ap-northeast-1.rds.amazonaws.com
+  reconnect: false
+  database: yamaokaya
+  username: root
+  password: 003tk333
+
+development:
+  <<: *defaults
+test:
+  <<: *defaults
+production:
+  <<: *defaults

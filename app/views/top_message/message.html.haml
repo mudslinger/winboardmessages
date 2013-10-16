@@ -1,0 +1,28 @@
+!!! 5
+%html(lang="ja")
+  %head
+    %title=@entry.title
+    =stylesheet_link_tag("application",media: "all","data-turbolinks-track" => false)
+    = csrf_meta_tags
+  %body
+    #headerArea
+      .lf
+        %h2
+          = image_tag @entry.icon
+          %a{href:@entry.src_uri,target:"sharepoint"}
+            = truncate(@entry.title,:length => 24)
+            = image_tag 'new.gif' if @entry.new?
+      .rf
+    .tb#contentsArea
+      %br
+      %br
+      %br
+      =raw(@entry.body)
+      %br
+      %br
+    .tb#footerArea
+      .lf
+        =link_to('←' + truncate(@prev_entry.title,:length => 15),key: @key-1,format: 'html',type:@type) if @prev_entry.present?
+      .rf
+        =link_to(truncate(@next_entry.title,:length => 15) + '→',key: @key+1,format: 'html',type:@type) if @next_entry.present?
+
