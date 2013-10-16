@@ -1,5 +1,3 @@
-require 'sidekiq/web'
-require 'sidetiq/web'
 Winboardmessages::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -15,7 +13,7 @@ Winboardmessages::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  mount Sidekiq::Web, at: '/sidekiq'
+
   get ':type/:key(.:format)' => 'top_message#message'
   get 'x' => 'top_message#x'
 
