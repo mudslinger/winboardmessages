@@ -33,7 +33,7 @@ class TopMessageController < ApplicationController
       # else
       #   render :status => :forbidden, :text => "Forbidden"
       # end
-
+      yield
     end
 end
 
