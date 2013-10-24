@@ -23,7 +23,7 @@
       %br
     .tb#footerArea
       .lf
-        =link_to('←' + truncate(@prev_entry.title,:length => 15),key: @key-1,format: 'html',type:@type) if @prev_entry.present?
+        =link_to("←#{truncate(@prev_entry.title,:length => 15)}",key: @key-1,format: 'html',type:@type) if @prev_entry.present?
       .rf
-        =link_to(truncate(@next_entry.title,:length => 15) + '→',key: @key+1,format: 'html',type:@type) if @next_entry.present?
+        =link_to("#{truncate(@next_entry.title,:length => 15)}→",key: @key+1,format: 'html',type:@type) if @next_entry.present?
 
